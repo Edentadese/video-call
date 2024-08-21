@@ -470,6 +470,7 @@ class JoinMeeting extends StatefulWidget {
 class _JoinMeetingState extends State<JoinMeeting> {
   
   final TextEditingController _meetingIdController = TextEditingController();
+  final TextEditingController _nameController = TextEditingController();
   
   final Map<String, String> _meetingDetails = {};
   @override
@@ -492,7 +493,7 @@ class _JoinMeetingState extends State<JoinMeeting> {
                 ),
                 const SizedBox(height: 20),
                 TextField(
-                  controller: _meetingIdController,
+                  controller: _nameController,
                   decoration: const InputDecoration(
                     labelText: 'Name',
                     border: OutlineInputBorder(),
